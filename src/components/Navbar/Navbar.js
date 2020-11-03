@@ -8,7 +8,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import MenuItems from './MenuItems';
 
 const Navbar = () => {
-    const [menuClicked, setMenuClicked] = useState(true);
+    const [menuClicked, setMenuClicked] = useState(false);
 
     return (
         <nav className={'NavbarItems'}>
