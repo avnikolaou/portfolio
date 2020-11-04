@@ -12,25 +12,25 @@ const BarItems = [
         percentClass: 'w1'
     },
     {
-        skill: 'HTML',
+        skill: 'HTML5',
         percent: '90%',
         fillClass: 'w9',
         percentClass: 'w1'
     },
     {
-        skill: 'CSS/SASS',
+        skill: 'CSS3/SASS',
         percent: '90%',
         fillClass: 'w9',
         percentClass: 'w1'
     },
     {
-        skill: 'JEST',
+        skill: 'Jest',
         percent: '80%',
         fillClass: 'w8',
         percentClass: 'w2'
     },
     {
-        skill: 'GIT',
+        skill: 'Git',
         percent: '90%',
         fillClass: 'w9',
         percentClass: 'w1'
@@ -42,7 +42,13 @@ const BarItems = [
         percentClass: 'w3'
     },
     {
-        skill: 'Mongo',
+        skill: 'Express',
+        percent: '70%',
+        fillClass: 'w7',
+        percentClass: 'w3'
+    },
+    {
+        skill: 'mongoDB',
         percent: '70%',
         fillClass: 'w7',
         percentClass: 'w3'
