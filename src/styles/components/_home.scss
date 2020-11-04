@@ -21,7 +21,7 @@
     .icons {
         display: flex;
         flex-wrap: wrap;
-        height: 250px;
+        height: auto;
         margin-top: 50px;
 
         .icon-container {
@@ -42,6 +42,88 @@
             }
         }
     }
+
+    .info {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+
+        .general-info {
+            height: 100%;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .bars {
+            height: 100%;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+
+            .bar {
+                align-items: center;
+                background: #c0c7cb;
+                margin: 15px auto;
+                height: 30px;
+                width: 90%;
+                display: flex;
+                color: white;
+
+                .bar-skill {
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    height: 100%;
+                    background: #485461;
+                    width: 20%;
+
+                }
+
+                .bar-fill {
+                    background: linear-gradient(90deg, #485461 0%, #28313b 100%);
+                    height: 100%;
+                }
+
+                .w9 {
+                    width: 90%;
+                }
+
+                .w8 {
+                    width: 80%;
+                }
+
+                .w7 {
+                    width: 70%;
+                }
+
+                .w1 {
+                    width: 10%;
+                }
+
+                .w2 {
+                    width: 20%;
+                }
+
+                .w3 {
+                    width: 30%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:960px) {
@@ -49,6 +131,16 @@
         .icons {
             .icon-container {
                 width: 50%;
+            }
+        }
+
+        .info {
+            .general-info {
+                width: 100%;
+            }
+
+            .bars {
+                width: 100%;
             }
         }
     }
