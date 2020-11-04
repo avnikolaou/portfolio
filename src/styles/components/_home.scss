@@ -84,17 +84,21 @@
                 background: #c0c7cb;
                 margin: 15px auto;
                 height: 30px;
-                width: 95%;
+                width: 100%;
                 display: flex;
                 color: white;
 
                 .bar-skill {
                     align-items: center;
-                    justify-content: center;
+                    //justify-content: center;
                     display: flex;
                     height: 100%;
                     background: #485461;
-                    width: 35%;
+                    width: 25%;
+
+                    p {
+                        padding-left: 5px;
+                    }
                 }
 
                 .bar-fill {
@@ -103,27 +107,27 @@
                 }
 
                 .w9 {
-                    width: 75%;
-                }
-
-                .w8 {
                     width: 65%;
                 }
 
-                .w7 {
+                .w8 {
                     width: 55%;
                 }
 
+                .w7 {
+                    width: 45%;
+                }
+
                 .w1 {
-                    width: 15%;
+                    width: 10%;
                 }
 
                 .w2 {
-                    width: 35%;
+                    width: 20%;
                 }
 
                 .w3 {
-                    width: 45%;
+                    width: 30%;
                 }
             }
         }
