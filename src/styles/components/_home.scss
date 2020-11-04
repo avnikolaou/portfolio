@@ -20,6 +20,7 @@
 
     .icons {
         display: flex;
+        flex-wrap: wrap;
         height: 250px;
         margin-top: 50px;
 
@@ -38,6 +39,26 @@
 
             p {
                 height: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .home-container {
+        .icons {
+            .icon-container {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .home-container {
+        .icons {
+            .icon-container {
+                width: 100%;
             }
         }
     }
