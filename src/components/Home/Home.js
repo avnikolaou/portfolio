@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Icon from './Icon';
 import Bar from './Bar';
@@ -9,6 +9,11 @@ import BarItems from './BarItems';
 import profile from '../../assets/profile.jpg'
 
 const Home = () => {
+
+    useEffect(() => {
+        document.title = 'Home - Avraam Nikolaou'
+    });
+
     return (
         <div className={'home-container'}>
             <div className={'home-container__inner'}>

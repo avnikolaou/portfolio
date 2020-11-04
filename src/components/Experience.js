@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Experience = () => {
+
+    useEffect(() => {
+        document.title = 'Experience - Avraam Nikolaou'
+    });
+
     return (
         <div>
             Experince Component!
