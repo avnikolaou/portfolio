@@ -31,14 +31,13 @@ const Home = () => {
                 <div className={'info'}>
                     <div className={'general-info'}>
                         <img src={profile} alt=""/>
-                        <div className={'info-title'}>
-                            That's me!
-                        </div>
+                        <h2 className={'info-title'}>
+                            Hey, that's me!
+                        </h2>
 
                         <div className={'info-text'}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                            a galley of type and scrambled it to make a type specimen book.
+                            I'm a Front-End Developer from Greece. Javascript is my main focus and
+                            coffee is my fuel. Nice to 'e-meet' you!
                         </div>
                     </div>
 

@@ -2,7 +2,6 @@
     .home-container__inner {
         margin: auto;
         max-width: 1200px;
-        padding: 30px 0;
     }
 
     .title {
@@ -48,6 +47,7 @@
         padding: 0 10px;
 
         .general-info {
+            padding: 15px;
             height: 100%;
             width: 50%;
             align-items: center;
@@ -57,13 +57,20 @@
             flex-direction: column;
 
             img {
-                width: 100px;
-                height: 100px;
+                width: 270px;
+                height: 270px;
+            }
+
+            .info-title {
+                margin: 30px 0;
+            }
+
+            .info-text {
+                font-size: 22px;
             }
         }
 
         .bars {
-            height: 100%;
             width: 50%;
             align-items: center;
             justify-content: center;
