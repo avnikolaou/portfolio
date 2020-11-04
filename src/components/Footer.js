@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <footer>
             <div className={'footer-icons'}>
-                <a href={'https://www.linkedin.com/in/avraam-nikolaou/'} target={'_blank'}><FontAwesomeIcon icon={faLinkedinIn}/></a>
+                <a href={'https://www.linkedin.com/in/avraam-nikolaou/'} target={'_blank'} rel={'noopener noreferrer'}><FontAwesomeIcon icon={faLinkedinIn}/></a>
 
-                <a href={'https://github.com/avnikolaou'} target={'_blank'}><FontAwesomeIcon icon={faGithub}/></a>
+                <a href={'https://github.com/avnikolaou'} target={'_blank'} rel={'noopener noreferrer'}><FontAwesomeIcon icon={faGithub}/></a>
             </div>
 
             <div className={'footer-copyright'}>
