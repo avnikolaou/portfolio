@@ -1,7 +1,10 @@
 import React from 'react';
 
-import IconItems from './IconItems';
 import Icon from './Icon';
+import Bar from './Bar';
+
+import IconItems from './IconItems';
+import BarItems from './BarItems';
 
 import profile from '../../assets/profile.jpg'
 
@@ -18,9 +21,9 @@ const Home = () => {
                 </div>
 
                 <div className={'icons'}>
-                    {IconItems.map((item) => {
+                    {IconItems.map((item, index) => {
                         return (
-                            <Icon icon={item.icon} text={item.text} title={item.title} />
+                            <Icon key={'icon' + index} icon={item.icon} text={item.text} title={item.title} />
                         )
                     })}
                 </div>
@@ -40,54 +43,11 @@ const Home = () => {
                     </div>
 
                     <div className={'bars'}>
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>Javascript</div>
-                            <div className={'bar-fill w9'}/>
-                            <div className={'w1'}>90%</div>
-                        </div>
-
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>React</div>
-                            <div className={'bar-fill w9'}/>
-                            <div className={'w1'}>90%</div>
-                        </div>
-
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>HTML</div>
-                            <div className={'bar-fill w9'}/>
-                            <div className={'w1'}>90%</div>
-                        </div>
-
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>CSS/SASS</div>
-                            <div className={'bar-fill w9'}/>
-                            <div className={'w1'}>90%</div>
-                        </div>
-
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>JEST</div>
-                            <div className={'bar-fill w8'}/>
-                            <div className={'w2'}>80%</div>
-                        </div>
-
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>GIT</div>
-                            <div className={'bar-fill w9'}/>
-                            <div className={'w1'}>90%</div>
-                        </div>
-
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>Node</div>
-                            <div className={'bar-fill w7'}/>
-                            <div className={'w3'}>70%</div>
-                        </div>
-
-                        <div className={'bar'}>
-                            <div className={'bar-skill'}>Mongo</div>
-                            <div className={'bar-fill w7'}/>
-                            <div className={'w3'}>70%</div>
-                        </div>
-
+                        {BarItems.map((bar, index) => {
+                            return (
+                                <Bar key={'bar' + index} skill={bar.skill} percent={bar.percent} fillClass={bar.fillClass} percentClass={bar.percentClass} />
+                            )
+                        })}
                     </div>
 
                 </div>
