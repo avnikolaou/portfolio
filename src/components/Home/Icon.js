@@ -6,7 +6,7 @@ const Icon = ({ icon, title, text}) => {
     return (
         <div className={'icon-container'}>
             <FontAwesomeIcon icon={icon} />
-            <h3>{title}</h3>
+            <h2>{title}</h2>
             <p>{text}</p>
         </div>
     )
