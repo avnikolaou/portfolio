@@ -8,7 +8,7 @@ const IconItems = [
     },
     {
         icon: faLaptopCode,
-        title: 'Clean',
+        title: 'Code',
         text: 'On a mission to wright clean code!'
     },
     {
