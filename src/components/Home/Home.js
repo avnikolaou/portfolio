@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook, faLaptopCode, faTabletAlt, faCogs } from '@fortawesome/free-solid-svg-icons'
 import IconItems from './IconItems';
 import Icon from './Icon';
 
