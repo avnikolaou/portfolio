@@ -41,8 +41,7 @@ const Home = () => {
                         </h2>
 
                         <div className={'info-text'}>
-                            I'm a Front-End Developer from Greece. Javascript is my main focus and
-                            coffee is my fuel. Nice to 'e-meet' you!
+                            I'm a Front-End Developer from Greece. I speak Javascript and run on coffee. Nice to 'e-meet' you!
                         </div>
                     </div>
 
