@@ -16,7 +16,15 @@ const Home = () => {
 
     return (
         <div className={'home-container'}>
+            <div className={'banner'}>
+                <div className={'banner-image'}>
+
+                </div>
+            </div>
+
             <div className={'home-container__inner'}>
+
+
                 <div className={'title'}>
                    <h1>
                        Hi, I'm <span>Avraam Nikolaou</span>

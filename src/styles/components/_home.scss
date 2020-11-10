@@ -4,6 +4,14 @@
         max-width: 1200px;
     }
 
+    .banner {
+        .banner-image {
+            height: 50vh;
+            background-size: cover;
+            background: url('../../assets/js-dev.jpg') no-repeat center;
+        }
+    }
+
     .title {
         margin: 150px 0;
         text-align: center;
