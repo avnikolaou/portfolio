@@ -45,8 +45,6 @@ const Contact = () => {
         validate
     });
 
-    console.log('Formik errors: ', formik.errors)
-
     return (
         <div className={'contact-container'}>
             <div className={'title'}>
@@ -63,10 +61,13 @@ const Contact = () => {
                             type="text"
                             id={'name'}
                             name={'name'}
+                            onBlur={formik.handleBlur}
                             value={formik.values.name}
                             onChange={formik.handleChange}
                         />
-                        {formik.errors.name ? <div className={'error'}>{formik.errors.name}</div> : null}
+                        {formik.touched.name && formik.errors.name ? (
+                            <div className={'error'}>{formik.errors.name}</div>
+                        ) : null}
                     </div>
 
                     <div className={'form-control'}>
@@ -75,10 +76,13 @@ const Contact = () => {
                             type={'text'}
                             id={'email'}
                             name={'email'}
+                            onBlur={formik.handleBlur}
                             value={formik.values.email}
                             onChange={formik.handleChange}
                         />
-                        {formik.errors.email ? <div className={'error'}>{formik.errors.email}</div> : null}
+                        {formik.touched.email && formik.errors.email ? (
+                            <div className={'error'}>{formik.errors.email}</div>
+                        ) : null}
                     </div>
 
                     <div className={'form-control'}>
@@ -87,9 +91,12 @@ const Contact = () => {
                             id={'message'}
                             name={'message'}
                             rows='5'
+                            onBlur={formik.handleBlur}
                             value={formik.values.message} onChange={formik.handleChange}
                         />
-                        {formik.errors.message ? <div className={'error'}>{formik.errors.message}</div> : null}
+                        {formik.touched.message && formik.errors.message ? (
+                            <div className={'error'}>{formik.errors.message}</div>
+                        ) : null}
                     </div>
 
                     <button className={'sendButton'} type={'submit'} value={'Send'}>Send</button>
