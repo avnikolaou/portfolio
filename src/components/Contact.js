@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 const Contact = () => {
 
@@ -39,10 +40,16 @@ const Contact = () => {
         return errors
     }
 
+    const validationSchema = Yup.object({
+        name: Yup.string().required('Required'),
+        email: Yup.string().email('Invalid email format').required('Required'),
+        message: Yup.string().required('Required'),
+    });
+
     const formik = useFormik({
         initialValues,
         onSubmit,
-        validate
+        validationSchema
     });
 
     return (
