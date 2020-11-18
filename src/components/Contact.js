@@ -17,9 +17,12 @@ const Contact = () => {
         message: ''
     };
 
-    const onSubmit = async (values) => {
+    const onSubmit = async (values, { resetForm }) => {
         console.log(values)
-        await emailjs.send('default_service', keys.TEMPLATE_ID, values, keys.USER_ID);
+        const res = await emailjs.send('default_service', keys.TEMPLATE_ID, values, keys.USER_ID);
+        if (res.status === 200) {
+            resetForm();
+        }
     };
 
     const validationSchema = Yup.object({
@@ -66,7 +69,7 @@ const Contact = () => {
                             id={'reply_to'}
                             name={'reply_to'}
                             onBlur={formik.handleBlur}
-                            value={formik.values.email}
+                            value={formik.values.reply_to}
                             onChange={formik.handleChange}
                         />
                         {formik.touched.email && formik.errors.email ? (
