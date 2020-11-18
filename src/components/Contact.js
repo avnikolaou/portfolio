@@ -43,7 +43,7 @@ const Contact = () => {
                     <div className={'form-control'}>
                         <label htmlFor={'name'}>Name</label>
                         <input
-                            type="text"
+                            type={'text'}
                             id={'name'}
                             name={'name'}
                             onBlur={formik.handleBlur}
@@ -75,7 +75,7 @@ const Contact = () => {
                         <textarea
                             id={'message'}
                             name={'message'}
-                            rows='5'
+                            rows={'5'}
                             onBlur={formik.handleBlur}
                             value={formik.values.message} onChange={formik.handleChange}
                         />
